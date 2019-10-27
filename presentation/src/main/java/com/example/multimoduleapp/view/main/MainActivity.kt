@@ -1,10 +1,11 @@
-package com.example.multimoduleapp
+package com.example.multimoduleapp.view.main
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
+import com.example.multimoduleapp.R
 import com.example.multimoduleapp.databinding.ActivityMainBinding
 import dagger.android.AndroidInjection
 import dagger.android.AndroidInjector
@@ -27,7 +28,9 @@ class MainActivity : AppCompatActivity(), HasAndroidInjector {
     override fun onCreate(savedInstanceState: Bundle?) {
         AndroidInjection.inject(this)
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this,
+            R.layout.activity_main
+        )
         binding.run {
             lifecycleOwner = this@MainActivity
             vModel = viewModel

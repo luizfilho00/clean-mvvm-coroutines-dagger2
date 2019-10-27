@@ -7,13 +7,13 @@
 
         <variable
             name="vModel"
-            type="com.example.multimoduleapp.MainViewModel" />
+            type="com.example.multimoduleapp.view.main.MainViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".view.main.MainActivity">
 
         <TextView
             android:id="@+id/text_view_show_todo"

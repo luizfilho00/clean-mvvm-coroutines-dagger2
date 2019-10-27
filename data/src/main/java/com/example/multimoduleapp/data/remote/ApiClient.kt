@@ -1,5 +1,7 @@
-package com.example.multimoduleapp.data
+package com.example.multimoduleapp.data.remote
 
+import com.example.multimoduleapp.data.entity.ApiTodo
+import com.example.multimoduleapp.data.util.RequestHandler
 import javax.inject.Inject
 
 class ApiClient @Inject constructor(

@@ -1,5 +1,7 @@
-package com.example.multimoduleapp.data
+package com.example.multimoduleapp.data.mappers
 
+import com.example.multimoduleapp.data.util.Mapper
+import com.example.multimoduleapp.data.entity.ApiTodo
 import com.example.multimoduleapp.domain.entity.Todo
 import javax.inject.Inject
 

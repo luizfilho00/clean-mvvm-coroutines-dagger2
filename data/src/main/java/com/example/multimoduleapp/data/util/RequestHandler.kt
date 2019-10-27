@@ -1,4 +1,4 @@
-package com.example.multimoduleapp.data
+package com.example.multimoduleapp.data.util
 
 import kotlinx.coroutines.coroutineScope
 import retrofit2.Response

@@ -1,4 +1,4 @@
-package com.example.multimoduleapp
+package com.example.multimoduleapp.view.main
 
 import androidx.lifecycle.*
 import com.example.multimoduleapp.domain.entity.Todo

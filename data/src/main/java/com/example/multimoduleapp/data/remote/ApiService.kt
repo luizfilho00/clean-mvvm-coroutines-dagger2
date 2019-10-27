@@ -1,5 +1,6 @@
-package com.example.multimoduleapp.data
+package com.example.multimoduleapp.data.remote
 
+import com.example.multimoduleapp.data.entity.ApiTodo
 import retrofit2.Response
 import retrofit2.http.GET
 

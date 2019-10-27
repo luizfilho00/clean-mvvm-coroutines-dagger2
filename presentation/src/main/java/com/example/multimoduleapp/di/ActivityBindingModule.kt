@@ -1,6 +1,6 @@
 package com.example.multimoduleapp.di
 
-import com.example.multimoduleapp.MainActivity
+import com.example.multimoduleapp.view.main.MainActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

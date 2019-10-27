@@ -1,17 +1,14 @@
 package com.example.multimoduleapp.di
 
-import com.example.multimoduleapp.data.ApiClient
-import com.example.multimoduleapp.data.ApiService
+import com.example.multimoduleapp.data.remote.ApiClient
+import com.example.multimoduleapp.data.remote.ApiService
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides
-import dagger.multibindings.IntoSet
-import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import javax.inject.Named
 import javax.inject.Singleton
 
 @Module
@@ -42,5 +39,6 @@ object ApiProviderModule {
 
     @Provides
     @Singleton
-    fun provideApiClient(apiService: ApiService) = ApiClient(apiService)
+    fun provideApiClient(apiService: ApiService) =
+        ApiClient(apiService)
 }
