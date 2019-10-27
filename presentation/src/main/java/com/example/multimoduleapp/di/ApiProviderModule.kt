@@ -13,7 +13,6 @@ import javax.inject.Singleton
 
 @Module
 object ApiProviderModule {
-    private const val NAMED_API = "NAMED_API"
     private const val API_DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
 
     @Provides
